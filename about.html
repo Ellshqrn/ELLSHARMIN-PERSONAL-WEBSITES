@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo e.jpg" type="image/jpg">
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/BG.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .site-header {
+            background-color: rgb(247, 243, 247);
+            padding: 20px 40px;
+            border-bottom: 2px solid #f7f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 80px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-nav {
+            border: 2px solid #665a5a;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #fff5ee;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav a {
+            text-decoration: underline;
+            color: #333;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .main-nav a:hover {
+            color: #74512D;
+        }
+
+        .body-class {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5f1313;
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-shadow:
+                0 0 10px rgb(247, 243, 247),
+                0 0 20px rgb(247, 243, 247),
+                0 0 30px rgb(247, 243, 247);
+            animation: glow 2s ease-in-out infinite, fadeInUp 1.5s ease-in-out;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #0c0b0b;
+            font-weight: bold;
+            text-shadow:
+                0 0 10px rgb(247, 243, 247),
+                0 0 20px rgb(247, 243, 247),
+                0 0 30px rgb(247, 243, 247);
+        }
+
+        p {
+            font-size: 18px;
+            color: #000;
+            line-height: 1.6;
+            text-align: justify;
+            background-color: #fff5ee;
+            padding: 20px;
+            border-radius: 20px 0 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Animations */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #f7f3f7, 0 0 20px #f7f3f7, 0 0 30px #f7f3f7;
+            }
+            50% {
+                text-shadow: 0 0 20px #f7d6ff, 0 0 30px #f7d6ff, 0 0 40px #f7d6ff;
+            }
+            100% {
+                text-shadow: 0 0 10px #f7f3f7, 0 0 20px #f7f3f7, 0 0 30px #f7f3f7;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .fade-in-delay-1 { animation-delay: 0.3s; }
+        .fade-in-delay-2 { animation-delay: 0.6s; }
+        .fade-in-delay-3 { animation-delay: 0.9s; }
+
+        @media (max-width: 680px) {
+            .image-row img {
+                width: 90%;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                gap: 100px;
+            }
+
+            .main-nav {
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="logo">
+        <img src="images/e.jpg" alt="Logo">
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="education.html"> Education </a></li>
+            <li><a href="contact_me.html"> Contact Me </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Content -->
+<div class="body-class">
+    <h1>MY INTEREST</h1>
+
+    <div class="image-row">
+        <div class="image-box fade-in fade-in-delay-1">
+            <img src="images/ENHYPEN.png" alt="Enhypen">
+            <div class="caption fade-in fade-in-delay-2">ENHYPEN</div>
+        </div>
+        <div class="image-box fade-in fade-in-delay-2">
+            <img src="images/BLACKPINK.jpg" alt="Blackpink">
+            <div class="caption fade-in fade-in-delay-3">BLACKPINK</div>
+        </div>
+        <div class="image-box fade-in fade-in-delay-3">
+            <img src="images/BTS.jpg" alt="BTS">
+            <div class="caption fade-in fade-in-delay-1">BTS</div>
+        </div>
+    </div>
+
+    <p class="fade-in fade-in-delay-1">
+        One of my main interests is K-pop, which has become a big part of my daily life. I’m especially a fan of ENHYPEN, BTS, and BLACKPINK. In ENHYPEN, my biases are Jake and Ni-ki. Jake captures my interest with his sweet and friendly personality, strong stage presence, and smooth vocals. Ni-ki also stands out to me with his incredible dance skills, sharp movements, and maturity at such a young age. In BTS, my favorite is Taehyung (V), who amazes me with his deep voice, unique visuals, and artistic charm. From BLACKPINK, I’m drawn to Lisa for her powerful performances and Jisoo for her elegance and calming presence. K-pop is more than just music to me; it’s an interest that inspires and motivates me every day.
+    </p>
+
+    <div style="height: 40px;"></div>
+
+    <div class="image-row">
+        <div class="image-box fade-in fade-in-delay-1">
+            <img src="images/HYOSEOP2.jpg" alt="HYOSEOP">
+            <div class="caption fade-in fade-in-delay-2">Ahn Hyo Seop</div>
+        </div>
+        <div class="image-box fade-in fade-in-delay-2">
+            <img src="images/WOOSEOK2.jpeg" alt="WOOSEOK">
+            <div class="caption fade-in fade-in-delay-3">Byeon Woo Seok</div>
+        </div>
+        <div class="image-box fade-in fade-in-delay-3">
+            <img src="images/EUNWOO2.jpg" alt="EUNWOO">
+            <div class="caption fade-in fade-in-delay-1">Cha Eun Woo</div>
+        </div>
+    </div>
+
+    <p class="fade-in fade-in-delay-2">
+        Another one of my interests is watching Korean dramas (K-dramas). I enjoy the emotional storylines, beautiful cinematography, and the way each drama leaves a strong impact. My favorite Korean actors are Byeon Woo Seok, Ahn Hyo Seop, and Cha Eun Woo. Byeon Woo Seok impresses me with his expressive acting and charming personality, Ahn Hyo Seop captures my attention with his calm charisma and versatility in roles, while Cha Eun Woo stands out with his visuals and natural talent on screen. K-dramas have become a source of entertainment and relaxation for me, and I always look forward to discovering new stories and performances.
+    </p>
+</div>
+
+</body>
+</html>
