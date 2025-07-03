@@ -1,1 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*
+    {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .icon-education {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon-education img {
+    width: 100px; /* adjust size as needed */
+    height: auto;
+}
+
+.icon-education p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+.body-class{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+p
+{
+    color:rgb(23, 117, 24);
+    font-Roboto+condesed;
+}
+
+table,tr,td
+    {
+        border:1px solid black;
+        border-collapse:collapse;
+    }
+
+td
+    {
+        padding:5px;
+    
+    }
+
+tr:nth-child(even)
+    {
+        background-color:blueviolet;
+    }
+tr
+    {
+        background-color:aquamarine;
+    }
+
+tr:hover
+    {
+        background-color: goldenrod;   
+    }
+
+tr
+    {
+        background-color:brown;
+    }
+
+marquee
+    {
+        font-size: 40pt;
+        color:chartreuse;
+        font-family:Arial, Helvetica, Sans-serif;
+    }
+
+.box-marquee
+    {
+        background-color:cadetblue;
+        height:100px;
+        width:100%;
+    }
+
+p
+{
+    color:darkmagenta;
+}
+
+p.green
+{
+    color:green;
+    font-size: 16pt;
+    font-family: monospace;
+}
+
+p.yellow
+{
+    color:yellow;
+    font-size: 16pt;
+    font-family: blackletter;
+}
+
+.main-nav ul
+    {
+        list-style:none;
+        display:flex;
+        gap:25px;
+    }
+
+.main-nav a
+    {
+        color:darkmagenta;
+        font-family:poppins;
+        text-decoration:none;
+        font-weight: 600;
+    }
+
+.main-nav a:hover
+    {
+        text-decoration: underline;
+    }
+
+.site-header
+    {
+        display:flex;
+        align-items: center;
+        padding: 20px 40px;
+        justify-content:space-between;
+        background-color:rgb(133, 108, 76);
+        
+    }
+
+.box1
+    {
+        background-color:rgb(114, 234, 210);
+        height: 600px;
+        width :50%;
+        float:left;
+        padding : 30px;
+        font-size: 14pt;
+    }
+
+.box2
+    {
+        background-color:rgb(181, 58, 156);
+        height: 600px;
+        width :50%;
+        float:left;
+        padding :30px;
+        font-size: 14pt;
+    }
+
+.form-container
+    {
+        margin: auto;
+        border-radius: 50px;
+    }
+
+form label
+    {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+form input, form select, form textarea
+    {
+        box-sizing: border-box;
+        border: 1 px solid grey;
+        border-radius:5 px;
+        width: 100%;
+        padding:10px;
+    }
+
+form button
+    {
+        margin-top: 30px;
+    }@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+    {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .icon-education {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon-education img {
+    width: 100px; /* adjust size as needed */
+    height: auto;
+}
+
+.icon-education p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+.body-class{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+p
+{
+    color:rgb(23, 117, 24);
+    font-Roboto+condesed;
+}
+
+table,tr,td
+    {
+        border:1px solid black;
+        border-collapse:collapse;
+    }
+
+td
+    {
+        padding:5px;
+    
+    }
+
+tr:nth-child(even)
+    {
+        background-color:blueviolet;
+    }
+tr
+    {
+        background-color:aquamarine;
+    }
+
+tr:hover
+    {
+        background-color: goldenrod;   
+    }
+
+tr
+    {
+        background-color:rgb(221, 204, 204);
+    }
+
+marquee
+    {
+        font-size: 40pt;
+        color:chartreuse;
+        font-family:Arial, Helvetica, Sans-serif;
+    }
+
+.box-marquee
+    {
+        background-color:cadetblue;
+        height:100px;
+        width:100%;
+    }
+
+p
+{
+    color:darkmagenta;
+}
+
+p.green
+{
+    color:green;
+    font-size: 16pt;
+    font-family: monospace;
+}
+
+p.yellow
+{
+    color:yellow;
+    font-size: 16pt;
+    font-family: blackletter;
+}
+
+.main-nav ul
+    {
+        list-style:none;
+        display:flex;
+        gap:25px;
+    }
+
+.main-nav a
+    {
+        color:darkmagenta;
+        font-family:poppins;
+        text-decoration:none;
+        font-weight: 600;
+    }
+
+.main-nav a:hover
+    {
+        text-decoration: underline;
+    }
+
+.site-header
+    {
+        display:flex;
+        align-items: center;
+        padding: 20px 40px;
+        justify-content:space-between;
+        background-color:antiquewhite;
+        
+    }
+
+.box1
+    {
+        background-color:rgb(114, 234, 210);
+        height: 600px;
+        width :50%;
+        float:left;
+        padding : 30px;
+        font-size: 14pt;
+    }
+
+.box2
+    {
+        background-color:rgb(181, 58, 156);
+        height: 600px;
+        width :50%;
+        float:left;
+        padding :30px;
+        font-size: 14pt;
+    }
+
+.form-container
+    {
+        margin: auto;
+        border-radius: 50px;
+    }
+
+form label
+    {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+form input, form select, form textarea
+    {
+        box-sizing: border-box;
+        border: 1 px solid grey;
+        border-radius:5 px;
+        width: 100%;
+        padding:10px;
+    }
+
+form button
+    {
+        margin-top: 30px;
+    }
+
+    .rounded-frame 
+    {
+        background-color: #5a2326;
+        padding: 30px;
+        border-radius: 60px 60px 0 0;
+        box-shadow: 0 4px 15px rgba(66, 18, 18, 0.1);
+        margin-bottom: 50px; /* ← Tambah jarak bawah */
+    }
+    
+    .body-class h2 
+    {
+        margin-top: 100px; /* ← Tambah jarak atas pada "MY BIOGRAPHY" */
+        color: #792929;
+        margin-bottom: 20px;
+    }
+
+    .site-header {
+        background-color: rgb(247, 243, 247);
+        padding: 20px 40px;
+        border-bottom: 2px solid #f7f2f2;
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .logo img {
+        width: 80px;
+        border-radius: 20px;
+    }
+    
+    .welcome-banner {
+        font-size: 20px;
+        font-weight: bold;
+        color: #c71585; /* dark pink */
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #ffb6c1,
+            0 0 20px #ffb6c1,
+            0 0 30px #ffb6c1;
+        text-align: center;
+        flex: 1;
+    }
+    
+    .main-nav {
+        border: 2px solid #665a5a;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #fff5ee;
+    }
+    
+    .main-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-nav a {
+        text-decoration: underline;
+        color: #333;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .main-nav a:hover {
+        color: #74512D;
+    }
+    
+    /* Responsive */
+    @media (max-width: 800px) {
+        .header-content {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .main-nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .welcome-banner {
+            font-size: 18px;
+        }
+    }
+    
+    .logo img {
+        width: 80px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Bayang ditambah */
+    }
+
+    .caption {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #3d2a2a;
+        font-weight: bold;
+        text-shadow:
+            0 0 10px rgb(247, 243, 247),
+            0 0 20px rgb(247, 243, 247),
+            0 0 30px rgb(247, 243, 247);
+    }
