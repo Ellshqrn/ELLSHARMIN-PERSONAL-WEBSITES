@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+    <link rel="icon" href="images/logo e.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/BG.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .site-header {
+            background-color: rgb(247, 243, 247);
+            padding: 20px 40px;
+            border-bottom: 2px solid #f7f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 80px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-nav {
+            border: 2px solid #665a5a;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #fff5ee;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav a {
+            text-decoration: underline;
+            color: #333;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .main-nav a:hover {
+            color: #74512D;
+        }
+
+        .body-class {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #5f1313;
+            margin: 40px 0 20px;
+            text-shadow:
+                0 0 10px #f7f3f7,
+                0 0 20px #f7f3f7,
+                0 0 30px #f7f3f7;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .gallery-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+        }
+
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.6s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.8s; }
+        .gallery-item:nth-child(6) { animation-delay: 1s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .gallery-img-frame {
+            background-color: #fff5ee;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-img-frame img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .gallery-img-frame img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            font-size: 16px;
+            color: #5f1313;
+            font-weight: bold;
+            line-height: 1.6;
+            max-width: 600px;
+            text-align: justify;
+            background-color: #fff5ee;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .caption {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .gallery-img-frame img {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="logo">
+        <img src="images/e.jpg" alt="Logo">
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="education.html"> Education </a></li>
+            <li><a href="family.html"> Family </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+            <li><a href="contact_me.html"> Contact Me </a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Content -->
+<div class="body-class">
+    <h1>MY GALLERY</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <div class="gallery-img-frame">
+                <img src="images/myself.jpg" alt="Gallery">
+            </div>
+            <div class="caption">Capturing moments with style and confidence embracing creativity, coffee in hand, and a love for aesthetic places.</div>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-img-frame">
+                <img src="images/abe wok.jpg" alt="Gallery">
+            </div>
+            <div class="caption">A special reunion in Sarawak, finally meeting my beloved cousin’s family after so long. Moments like these are truly priceless.</div>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-img-frame">
+                <img src="images/nenek.jpg" alt="Gallery">
+            </div>
+            <div class="caption">Reunited after a year with my beloved Sarawakian grandma — her warmth, strength, and smile remind me of home. Moments like this are priceless.</div>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-img-frame">
+                <img src="images/prends.jpg" alt="Gallery">
+            </div>
+            <div class="caption">A proud moment with my classmates after successfully organizing the SULAM program 'Mindlink: Achieving the Future' at Sekolah Rendah Islam Aman Machang. Grateful for the opportunity to inspire and connect with young minds!</div>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-img-frame">
+                <img src="images/my friends.jpg" alt="Gallery">
+            </div>
+            <div class="caption">A sweet behind-the-scenes moment with my close friends during the SULAM program. Grateful for the laughter, teamwork, and memories we created together.</div>
+        </div>
+        <div class="gallery-item">
+            <div class="gallery-img-frame">
+                <img src="images/fav mans.jpg" alt="Gallery">
+            </div>
+            <div class="caption">The reason I can never move on from K-Pop—my forever biases from ENHYPEN. Their presence, talent, and charm captured my heart and never let go.</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

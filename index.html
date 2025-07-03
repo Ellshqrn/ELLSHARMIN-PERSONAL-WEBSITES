@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Website</title>
+  <link rel="icon" href="images/logo e.jpg" type="image/jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family:'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/BG.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .site-header {
+      background-color: rgb(247, 243, 247);
+      padding: 20px 40px;
+      border-bottom: 2px solid #f7f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      width: 80px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .welcome-text {
+      font-size: 25px;
+      font-weight: bold;
+      color: #3f082b;
+      margin: 0 30px;
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #ffb6c1,
+        0 0 20px #d6b1c3,
+        0 0 30px #d39fb9;
+      animation: pulse 2s ease-in-out infinite;
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .main-nav {
+      border: 2px solid #665a5a;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #fff5ee;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-nav a {
+      text-decoration: underline;
+      color: #333;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .main-nav a:hover {
+      color: #74512D;
+    }
+
+    .body-class {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .about-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 100px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    .image-frame-box {
+      background-color: #fff5ee;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 230px;
+      text-align: center;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.3s;
+      opacity: 0;
+    }
+
+    .image-frame-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+      border: 3px solid #74512D;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .rounded-frame {
+      background-color: #fff5ee;
+      padding: 30px;
+      border-radius: 20px 0 20px 0;
+      box-shadow: 5px 4px 25px rgba(0, 0, 0, 0.1);
+      max-width: 550px;
+      color: #333;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.6s;
+      opacity: 0;
+    }
+
+    .rounded-frame p {
+      font-size: 18px;
+      text-align: justify;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .bio-frame {
+      background-color: #fff5ee;
+      padding: 30px;
+      border-radius: 20px 0 20px 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      color: #000;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.9s;
+      opacity: 0;
+    }
+
+    .bio-frame p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #000;
+    }
+
+    .bio-frame p strong {
+      display: inline-block;
+      width: 140px;
+    }
+
+    .neon-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #5f1313;
+      margin: 50px 0 20px;
+      text-shadow:
+        0 0 10px rgb(247, 243, 247),
+        0 0 20px rgb(247, 243, 247),
+        0 0 30px rgb(247, 243, 247),
+        0 0 40px rgb(247, 243, 247);
+      animation: pulse 2s ease-in-out infinite, fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .site-header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .about-wrapper {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .image-frame-box, .rounded-frame, .bio-frame {
+        width: 90%;
+      }
+
+      .welcome-text {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="logo">
+    <img src="images/e.jpg" alt="Logo">
+  </div>
+
+  <div class="welcome-text">WELCOME TO ELLE'S PERSONAL WEBSITE</div>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html"> Home </a></li>
+      <li><a href="about.html"> About</a></li>
+      <li><a href="education.html"> Education </a></li>
+      <li><a href="contact_me.html"> Contact Me </a></li>
+      <li><a href="gallery.html"> Gallery </a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Body -->
+<div class="body-class">
+
+  <!-- ABOUT Section -->
+  <div class="neon-title">ABOUT ME</div>
+  <div class="about-wrapper">
+    <div class="image-frame-box">
+      <img src="images/selfie_pic.jpg" alt="My Photo">
+    </div>
+
+    <div class="rounded-frame">
+      <p>
+        My name is Nur Ellsharmin Shaqqirin Binti Alwi, I am 21 years old and the youngest of four siblings. 
+        I am currently pursuing a Diploma in Information Management (CDIM110) at Universiti Teknologi MARA (UiTM) Machang. 
+        I am a passionate and cheerful person who loves learning and exploring new things. I’m a big fan of K-pop, 
+        especially groups like Enhypen, BTS, and Blackpink. I also enjoy watching Korean dramas in my free time as a way to relax and get inspired.
+      </p>
+    </div>
+  </div>
+
+  <!-- BIOGRAPHY Section -->
+  <div class="neon-title">MY BIOGRAPHY</div>
+  <div class="bio-frame">
+    <p><strong>Date of Birth:</strong> 29 July 2004</p>
+    <p><strong>Hometown:</strong> Kubang Kerian, Kota Bharu, Kelantan</p>
+    <p><strong>Age:</strong> 21</p>
+    <p><strong>Height:</strong> 161 cm</p>
+    <p><strong>Religion:</strong> Islam</p>
+  </div>
+
+</body>
+</html>

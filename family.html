@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Family</title>
+    <link rel="icon" href="images/logo e.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/BG.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .site-header {
+            background-color: rgb(247, 243, 247);
+            padding: 20px 40px;
+            border-bottom: 2px solid #f7f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 80px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-nav {
+            border: 2px solid #665a5a;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #fff5ee;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav a {
+            text-decoration: underline;
+            color: #333;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .main-nav a:hover {
+            color: #74512D;
+        }
+
+        .body-class {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #5f1313;
+            margin: 40px 0 20px;
+            text-shadow: 
+                0 0 10px #f7f3f7,
+                0 0 20px #f7f3f7,
+                0 0 30px #f7f3f7;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .intro-frame {
+            background-color: #fff5ee;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 20px 0 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            font-size: 17px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .family-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 30px;
+            row-gap: 40px;
+            margin: 40px 0;
+        }
+
+        .family-item {
+            text-align: center;
+            width: 250px;
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+        }
+
+        .img-frame {
+            background-color: #fff5ee;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .img-frame:hover {
+            transform: scale(1.05);
+        }
+
+        .family-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .caption {
+            margin-top: 12px;
+            font-size: 16px;
+            color: #171616;
+            font-weight: bold;
+            text-shadow: 
+                0 0 5px #f7f3f7,
+                0 0 10px #ffffff;
+        }
+
+        @media (max-width: 680px) {
+            .main-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .family-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">
+        <img src="images/e.jpg" alt="Logo">
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="education.html"> Education </a></li>
+            <li><a href="family.html"> Family </a></li>
+            <li><a href="contact_me.html"> Contact Me </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="body-class">
+    <h1>MY FAMILY</h1>
+
+    <!-- Family Description -->
+    <div class="intro-frame">
+        My family is my biggest source of love, support, and strength. I come from a warm and caring household consisting of my father, mother, two brothers, one sister, and myself. We enjoy spending time together during meals, family trips, and celebrations. Although each of us has different interests and personalities, we always support each other in everything we do. I am truly grateful to have such a close-knit and loving family.
+    </div>
+
+    <!-- Family Gallery -->
+    <div class="family-gallery">
+        <div class="family-item">
+            <div class="img-frame">
+                <img src="images/ABAH.jpg" alt="Family 1">
+            </div>
+            <div class="caption">This is my father</div>
+        </div>
+        <div class="family-item">
+            <div class="img-frame">
+                <img src="images/MAMA.jpg" alt="Family 2">
+            </div>
+            <div class="caption">This is my mother</div>
+        </div>
+        <div class="family-item">
+            <div class="img-frame">
+                <img src="images/ALONG.jpg" alt="Family 3">
+            </div>
+            <div class="caption">This is my sister</div>
+        </div>
+        <div class="family-item">
+            <div class="img-frame">
+                <img src="images/ANGAH.jpg" alt="Family 4">
+            </div>
+            <div class="caption">This is my first brother</div>
+        </div>
+        <div class="family-item">
+            <div class="img-frame">
+                <img src="images/AQQIL.jpg" alt="Family 5">
+            </div>
+            <div class="caption">This is my second brother</div>
+        </div>
+        <div class="family-item">
+            <div class="img-frame">
+                <img src="images/ME.jpg" alt="Family 6">
+            </div>
+            <div class="caption">This is me</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
